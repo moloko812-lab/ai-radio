@@ -1,0 +1,1456 @@
+audio:
+  crossfade_sec: 2
+  duck_db: 10
+  target_loudness_lufs: -15
+buffer:
+  critical_seconds: 60
+  min_minutes: 7
+  target_minutes: 15
+djs:
+  discuss_lyrics: true
+  intro_before_end_sec: 10
+  list:
+  - id: DJ_A
+    name: Olga
+    personality: 'You are an upbeat, charismatic radio DJ who keeps the energy high
+      and the vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm
+      that matches the music. Before every song, say a short line: either a quick
+      joke, a light personal observation, or a very short story. Keep it natural and
+      conversational, never long. If there is a known story, background, or interesting
+      fact about the upcoming song or artist, briefly mention it in one or two sentences
+      before introducing the track. Always keep the pacing tight and engaging, like
+      a live radio host who knows the audience is here for the music.'
+    voice: af_sky
+    voice_ru: 6
+  - id: DJ_B
+    name: Antony
+    personality: 'You are a calm, confident radio host with a smooth voice and relaxed
+      delivery. Speak like someone who knows music deeply and enjoys sharing it with
+      listeners. Before each song, add a short moment of personality: either a clever
+      remark, a brief anecdote, or a subtle joke. Keep it concise and natural. If
+      the next track has an interesting story, inspiration, or cultural background,
+      mention it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+    voice: em_alex
+    voice_ru: 4
+  - id: DJ_3
+    name: Milka
+    personality: "You are a playful and witty DJ who brings humor and charm to the\
+      \ show. Speak casually and confidently, like a fun friend introducing great\
+      \ music. Before every track, deliver a short line \u2014 either a quick joke,\
+      \ a playful comment, or a tiny story. Keep it brief and entertaining. If there\u2019\
+      s an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    voice: af_jessica
+    voice_ru: 3
+  - id: DJ_4
+    name: Elvira
+    personality: "You are a playful and witty DJ who brings humor and charm to the\
+      \ show. Speak casually and confidently, like a fun friend introducing great\
+      \ music. Before every track, deliver a short line \u2014 either a quick joke,\
+      \ a playful comment, or a tiny story. Keep it brief and entertaining. If there\u2019\
+      s an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    voice: pf_dora
+    voice_ru: null
+  - id: DJ_5
+    name: Maximiliano
+    personality: 'You are a calm, confident radio host with a smooth voice and relaxed
+      delivery. Speak like someone who knows music deeply and enjoys sharing it with
+      listeners. Before each song, add a short moment of personality: either a clever
+      remark, a brief anecdote, or a subtle joke. Keep it concise and natural. If
+      the next track has an interesting story, inspiration, or cultural background,
+      mention it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+    voice: am_onyx
+    voice_ru: 24
+  - id: DJ_6
+    name: Marianna
+    personality: 'You are an upbeat, charismatic radio DJ who keeps the energy high
+      and the vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm
+      that matches the music. Before every song, say a short line: either a quick
+      joke, a light personal observation, or a very short story. Keep it natural and
+      conversational, never long. If there is a known story, background, or interesting
+      fact about the upcoming song or artist, briefly mention it in one or two sentences
+      before introducing the track. Always keep the pacing tight and engaging, like
+      a live radio host who knows the audience is here for the music.'
+    voice: bf_isabella
+    voice_ru: 32
+  long_monologue_threshold_sec: 20
+  outro_duration_sec: 7
+  personalities:
+    DJ_3: "You are a playful and witty DJ who brings humor and charm to the show.\
+      \ Speak casually and confidently, like a fun friend introducing great music.\
+      \ Before every track, deliver a short line \u2014 either a quick joke, a playful\
+      \ comment, or a tiny story. Keep it brief and entertaining. If there\u2019s\
+      \ an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    DJ_4: "You are a playful and witty DJ who brings humor and charm to the show.\
+      \ Speak casually and confidently, like a fun friend introducing great music.\
+      \ Before every track, deliver a short line \u2014 either a quick joke, a playful\
+      \ comment, or a tiny story. Keep it brief and entertaining. If there\u2019s\
+      \ an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    DJ_5: 'You are a calm, confident radio host with a smooth voice and relaxed delivery.
+      Speak like someone who knows music deeply and enjoys sharing it with listeners.
+      Before each song, add a short moment of personality: either a clever remark,
+      a brief anecdote, or a subtle joke. Keep it concise and natural. If the next
+      track has an interesting story, inspiration, or cultural background, mention
+      it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+    DJ_6: 'You are an upbeat, charismatic radio DJ who keeps the energy high and the
+      vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm that matches
+      the music. Before every song, say a short line: either a quick joke, a light
+      personal observation, or a very short story. Keep it natural and conversational,
+      never long. If there is a known story, background, or interesting fact about
+      the upcoming song or artist, briefly mention it in one or two sentences before
+      introducing the track. Always keep the pacing tight and engaging, like a live
+      radio host who knows the audience is here for the music.'
+    DJ_A: 'You are an upbeat, charismatic radio DJ who keeps the energy high and the
+      vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm that matches
+      the music. Before every song, say a short line: either a quick joke, a light
+      personal observation, or a very short story. Keep it natural and conversational,
+      never long. If there is a known story, background, or interesting fact about
+      the upcoming song or artist, briefly mention it in one or two sentences before
+      introducing the track. Always keep the pacing tight and engaging, like a live
+      radio host who knows the audience is here for the music.'
+    DJ_B: 'You are a calm, confident radio host with a smooth voice and relaxed delivery.
+      Speak like someone who knows music deeply and enjoys sharing it with listeners.
+      Before each song, add a short moment of personality: either a clever remark,
+      a brief anecdote, or a subtle joke. Keep it concise and natural. If the next
+      track has an interesting story, inspiration, or cultural background, mention
+      it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+hourly_news:
+  dj: DJ_5
+  enabled: true
+  newsdata:
+    api_key: pub_3a54c74ec6f74ef7b8094329f4acd5fb
+    country: us
+  openweathermap:
+    api_key: 61ca9d9124d94951786273a97b8dd004
+    city: New York
+  thesportsdb:
+    api_key: '123'
+language: en
+llm:
+  api_key: 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
+  api_type: openai
+  model_a:
+    api_key: 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
+    api_type: openai
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 24096
+    model: arcee-ai/trinity-large-preview:free
+    temperature: 0.6
+    timeout_sec: 180
+  model_b:
+    api_key: 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
+    api_type: openai
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 24096
+    model: arcee-ai/trinity-large-preview:free
+    temperature: 0.6
+    timeout_sec: 180
+  ollama_base_url: http://localhost:11434/v1
+  planner:
+    api_key: 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
+    api_type: openai
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 24096
+    model: arcee-ai/trinity-large-preview:free
+    temperature: 0.6
+    timeout_sec: 180
+music:
+  folders:
+  - E:/My_Music/AI Music SUNO
+  - E:/My_Music/EN/VA - NRJ Hit Music Only 2014 (2CD) (2014) [320 kbps]
+   /home/user/ai-radio/assets/music/AI Music SUNO
+  genres:
+  - chill
+  - lofi
+  - ambient
+  - electronic
+  max_track_duration_sec: 360
+  min_track_duration_sec: 180
+safety:
+  blocked_topics: []
+  blocked_words: []
+schedule:
+  jingle_every_minutes: 15
+  news_every_minutes: 30
+  programs:
+  - days:
+    - weekdays
+    description: "Late night radio for people who are still awake while the world\
+      \ sleeps. Deep conversations, strange facts, urban legends, late-night thoughts\
+      \ and hypnotic music.  The hosts talk about the night side of life \u2014 creativity\
+      \ at 2AM, cities that never sleep, strange human habits, unexplained events\
+      \ and the hidden rhythm of the world after midnight.  Slow atmospheric music\
+      \ between segments."
+    djs:
+    - DJ_3
+    image_url: /static/images/shows/78106fd06d90480796908276f03c4765_Night_Pulse.png
+    prompt: "Generate a late-night radio segment.\nThis is a calm atmospheric night\
+      \ radio show between midnight and early morning.\nThe tone should feel intimate,\
+      \ thoughtful and slightly mysterious \u2014 the kind of conversation people\
+      \ enjoy while driving at night, working late, coding, or unable to sleep.\n\
+      The hosts can discuss topics such as:\nstrange facts about human behavior at\
+      \ night\ncities that never sleep\ncreative bursts that happen after midnight\n\
+      interesting historical events that happened at night\nunusual night jobs\nurban\
+      \ legends\nstrange coincidences\nphilosophical thoughts that appear when the\
+      \ world is quiet\nthe psychology of insomnia\nunusual scientific facts about\
+      \ sleep and dreams\nmysterious events that still have no explanation\nStyle\
+      \ requirements:\nHosts speak naturally and react to each other.\nOccasional\
+      \ humor is welcome but avoid loud or aggressive energy.\nThe dialogue should\
+      \ feel immersive and reflective.\nHosts may ask each other questions, challenge\
+      \ ideas, or share surprising facts.\nSegments should transition naturally to\
+      \ music.\nAvoid technical explanations about the radio system.\nSpeak only as\
+      \ radio hosts talking to listeners."
+    start_time: 00:00
+    title: Night Pulse
+    type: music
+  - days:
+    - weekdays
+    description: "A mysterious night show exploring the universe, space exploration,\
+      \ alien signals and cosmic mysteries.  The hosts dive into fascinating space\
+      \ discoveries, strange astronomical phenomena, theories about extraterrestrial\
+      \ civilizations, and the future of humanity beyond Earth.  The atmosphere is\
+      \ calm, intelligent and slightly mysterious \u2014 perfect for late-night listeners.\
+      \  Between discussions, atmospheric electronic and ambient music plays."
+    djs:
+    - DJ_Milka
+    image_url: /static/images/shows/ec02071b4fad46ee80380166c8ac0441_Deep_Space_Signals.png
+    prompt: 'Prompt (LLM Instructions)
+
+
+      Generate a late-night radio discussion about space and the universe.
+
+
+      The show happens around 2AM, when listeners are usually relaxed, thoughtful
+      and curious.
+
+
+      The hosts explore fascinating space topics and discuss them in an engaging,
+      intelligent way.
+
+
+      Possible discussion topics include:
+
+
+      strange signals detected from space
+
+
+      unexplained cosmic phenomena
+
+
+      black holes and extreme physics
+
+
+      famous space missions
+
+
+      discoveries from modern telescopes
+
+
+      the possibility of alien civilizations
+
+
+      paradoxes like the Fermi paradox
+
+
+      how humanity might colonize other planets
+
+
+      the scale of the universe
+
+
+      strange planets discovered by astronomers
+
+
+      future technologies for interstellar travel
+
+
+      famous unsolved space mysteries
+
+
+      Dialogue style:
+
+
+      Hosts should talk naturally and react to each other.
+
+
+      They may speculate, question theories, or share surprising scientific facts.
+
+
+      Occasionally they may disagree about interpretations or possibilities.
+
+
+      Tone should be curious, intelligent and slightly mysterious.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: 02:00
+    title: Deep Space Signals
+    type: music
+  - days:
+    - weekdays
+    description: "A surreal early-morning radio show about dreams, the subconscious\
+      \ mind and strange nighttime thoughts.  When the world is quiet and people drift\
+      \ between sleep and waking, the hosts explore the mysterious landscape of dreams\
+      \ \u2014 why we dream, strange dream experiences, lucid dreaming, subconscious\
+      \ creativity and the science behind sleep.  The tone is calm, reflective and\
+      \ slightly surreal.  Ambient, downtempo and atmospheric music plays between\
+      \ conversations.  Perfect for night workers, dreamers and early risers."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/5e6cb577b4da42919aa04a226365a4c7_Dream_Frequencies2.png
+    prompt: 'Prompt (LLM Instructions)
+
+
+      Generate a calm early-morning radio conversation.
+
+
+      The show takes place around 4AM when many listeners are either half-asleep,
+      waking up early, or working through the night.
+
+
+      The tone should feel dreamy, reflective and slightly mysterious.
+
+
+      Possible topics include:
+
+
+      why humans dream
+
+
+      strange or famous dream stories
+
+
+      lucid dreaming experiences
+
+
+      the science of sleep
+
+
+      subconscious creativity
+
+
+      inventions or ideas that appeared in dreams
+
+
+      strange symbols that appear in dreams
+
+
+      sleep paralysis and unusual sleep phenomena
+
+
+      dreams influencing art, music or literature
+
+
+      philosophical ideas about consciousness
+
+
+      the border between imagination and reality
+
+
+      how the brain processes memories during sleep
+
+
+      Dialogue style:
+
+
+      Hosts should speak slowly and thoughtfully.
+
+
+      They can share interesting facts, personal stories, theories or philosophical
+      reflections.
+
+
+      Occasionally they may ask listeners reflective questions.
+
+
+      The conversation should feel immersive and slightly surreal.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: 04:00
+    title: Dream Frequencies
+    type: music
+  - days:
+    - weekdays
+    description: "An energetic morning radio show that helps listeners start the day\
+      \ with curiosity, ideas and good music.  The hosts talk about interesting global\
+      \ news, scientific discoveries, unusual facts, technology trends, and inspiring\
+      \ stories from around the world.  The atmosphere is optimistic, intelligent\
+      \ and motivating \u2014 perfect for people commuting, making coffee or starting\
+      \ work.  Between segments the show plays upbeat music to boost morning energy."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/0cf99a29e72a41c5b7033abf8a773a6e_Morning_Launch.png
+    prompt: 'Generate a lively morning radio conversation.
+
+
+      The show takes place around 6AM when listeners are waking up, commuting or starting
+      their day.
+
+
+      The tone should be energetic, positive and curious.
+
+
+      The hosts should help listeners wake up mentally with interesting ideas and
+      engaging conversation.
+
+
+      Possible discussion topics include:
+
+
+      interesting news from science and technology
+
+
+      unusual discoveries around the world
+
+
+      surprising facts about the universe or nature
+
+
+      inspiring stories about innovation
+
+
+      strange but true historical facts
+
+
+      psychology and productivity
+
+
+      how people start their mornings in different cultures
+
+
+      future technology that may change everyday life
+
+
+      fascinating statistics about the modern world
+
+
+      weird but true scientific experiments
+
+
+      global trends shaping the future
+
+
+      Dialogue style:
+
+
+      Hosts should interact dynamically and react to each other''s ideas.
+
+
+      They can ask questions, debate small details, or express surprise at interesting
+      facts.
+
+
+      Occasional humor is welcome.
+
+
+      The conversation should feel fast, engaging and stimulating for the mind.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: 06:00
+    title: Morning Launch
+    type: music
+  - days:
+    - weekdays
+    description: "A fast-paced morning show about life in the world's biggest cities.\
+      \  The hosts explore urban culture, architecture, street food, nightlife, transportation,\
+      \ and the strange habits of people living in \u043C\u0435\u0433\u0430\u043F\u043E\
+      \u043B\u0438\u0441\u0430\u0445.  Each episode may focus on a different city\
+      \ or compare how people live in cities across the world.  The show captures\
+      \ the rhythm, chaos and creativity of urban life.  Music between segments features\
+      \ energetic electronic, indie and global beats."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/70da1383031c488aba69e64bec2f0af8_City_Pulse.png
+    prompt: 'Generate an energetic radio discussion about cities and urban life.
+
+
+      The show takes place during the morning rush hour around 8AM when listeners
+      are commuting or starting work.
+
+
+      The tone should feel lively, curious and slightly playful.
+
+
+      The hosts should explore interesting aspects of life in cities around the world.
+
+
+      Possible discussion topics include:
+
+
+      fascinating facts about famous cities
+
+
+      how daily life differs between cities
+
+
+      unusual transportation systems
+
+
+      strange urban laws
+
+
+      famous neighborhoods and their culture
+
+
+      street food traditions
+
+
+      architecture and iconic buildings
+
+
+      nightlife and music scenes
+
+
+      urban legends from different cities
+
+
+      how technology is changing city life
+
+
+      how cities grow and evolve
+
+
+      weird habits of people in big cities
+
+
+      Dialogue style:
+
+
+      Hosts should talk quickly and react to each other''s stories.
+
+
+      They may compare cities, debate which places are more interesting, or share
+      surprising facts.
+
+
+      The conversation should feel dynamic and engaging for listeners starting their
+      day.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: 08:00
+    title: City Pulse
+    type: music
+  - days:
+    - weekends
+    description: High energy tracks to get your weekend going.
+    djs:
+    - DJ_3
+    - DJ_A
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: Super high energy. Talk about weekend plans, parties, and having fun.
+      Fast paced delivery.
+    start_time: '10:00'
+    title: Weekend Party Starter
+    type: music
+  - days:
+    - weekdays
+    description: A show about the technologies shaping the future right now.  Artificial
+      intelligence, robotics, space exploration, biotechnology, new materials, and
+      inventions that could change everyday life.  The hosts break down complex ideas
+      into engaging conversations and explore what the future might actually look
+      like.  The tone is curious, optimistic and sometimes skeptical.  Music between
+      segments features modern electronic, synthwave and futuristic soundscapes.
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/460964d4fbf14cf9b3776f82ebfdd137_Future_Now.png
+    prompt: 'Generate a radio discussion about emerging technologies and the future.
+
+
+      The show takes place mid-morning around 10AM when listeners are mentally active
+      and curious.
+
+
+      The hosts explore technologies that are currently changing the world or may
+      transform society in the near future.
+
+
+      Possible discussion topics include:
+
+
+      artificial intelligence and machine learning
+
+
+      robotics and automation
+
+
+      future transportation systems
+
+
+      space exploration and private space companies
+
+
+      biotech and genetic engineering
+
+
+      brain-computer interfaces
+
+
+      new materials and nanotechnology
+
+
+      smart cities and future infrastructure
+
+
+      augmented and virtual reality
+
+
+      climate technology and new energy solutions
+
+
+      surprising inventions currently being developed
+
+
+      how future technology may change work and everyday life
+
+
+      Dialogue style:
+
+
+      Hosts should analyze ideas, speculate about future possibilities and sometimes
+      question whether certain technologies are realistic.
+
+
+      They may debate potential benefits and risks.
+
+
+      The tone should be intelligent, curious and slightly visionary.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '10:00'
+    title: Future Now
+    type: music
+  - days:
+    - everyday
+    description: Morning News
+    djs:
+    - DJ_4
+    - DJ_5
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: AI Music
+    start_time: '11:15'
+    title: Morning Show AI Music in AIR
+    type: music
+  - days:
+    - weekdays
+    description: Relaxing vibes for your working day. Time to focus and unwind.
+    djs:
+    - DJ_B
+    prompt: Keep it calm and focused. Talk about productivity and taking breaks. A
+      bit more relaxed.
+    start_time: '12:00'
+    title: Midday Chill
+    type: music
+  - days:
+    - weekdays
+    description: "A musical journey around the world.  Every episode explores music\
+      \ scenes from different countries and cultures \u2014 from electronic underground\
+      \ clubs in Berlin to Afrobeat in Lagos, Latin rhythms in Mexico City, K-pop\
+      \ in Seoul, and indie scenes in unexpected places.  The hosts talk about artists,\
+      \ genres, music history and how culture influences sound.  Between conversations\
+      \ the show plays energetic global tracks and fresh discoveries.  Perfect for\
+      \ listeners during lunch or work breaks."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/77bf9b07180f4daab8d20df974b10ff1_Global_Beats.png
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: 'Generate a radio show discussion about global music culture.
+
+
+      The show takes place around midday when listeners want something lively, entertaining
+      and inspiring.
+
+
+      The hosts explore music scenes from different parts of the world.
+
+
+      Possible discussion topics include:
+
+
+      unique music genres from different countries
+
+
+      famous music cities around the world
+
+
+      underground club scenes
+
+
+      cultural influences on music styles
+
+
+      traditional instruments used in modern music
+
+
+      how technology changed music production
+
+
+      famous global festivals
+
+
+      surprising collaborations between artists from different countries
+
+
+      how music spreads through the internet
+
+
+      unusual musical traditions
+
+
+      interesting stories about musicians and bands
+
+
+      how different cultures approach rhythm and melody
+
+
+      Dialogue style:
+
+
+      Hosts should sound enthusiastic and curious.
+
+
+      They can introduce different music styles, compare cultures, and react to surprising
+      musical traditions.
+
+
+      Occasional humor and playful debate are welcome.
+
+
+      The show should feel energetic and globally minded.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '12:00'
+    title: Global Beats
+    type: music
+  - days:
+    - weekends
+    description: Smooth tracks for driving or just chilling on your day off.
+    djs:
+    - DJ_B
+    image_url: /static/images/shows/b145ba2039064b5daafac3a2ffff851f_3D-graphics_Bouncing_balls_069862_.jpg
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: Relaxed but upbeat. Talk about road trips, Sunday roast, or kicking back
+      and doing nothing.
+    start_time: '14:00'
+    title: Weekend Afternoon Drive
+    type: music
+  - days:
+    - weekdays
+    description: "Stories hidden inside cities.  Every episode explores unusual real\
+      \ stories that happened in cities around the world \u2014 strange events, forgotten\
+      \ places, mysterious people, underground communities and bizarre urban legends.\
+      \  Some stories are historical, some are modern, some sound unbelievable but\
+      \ are true.  The show feels like discovering the hidden layer of cities that\
+      \ most people never notice.  Music between segments features atmospheric electronic,\
+      \ lo-fi and indie tracks."
+    djs:
+    - DJ_5
+    image_url: /static/images/shows/28883dd9f743445dad4d821fe74f8334_Urban_Stories.png
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: 'Generate a radio discussion about unusual stories from cities.
+
+
+      The show takes place in the early afternoon around 2PM when listeners may be
+      working, driving or taking a break.
+
+
+      The tone should be intriguing, storytelling-focused and immersive.
+
+
+      The hosts explore strange, interesting or mysterious real stories connected
+      to cities.
+
+
+      Possible topics include:
+
+
+      strange true events that happened in cities
+
+
+      mysterious disappearances
+
+
+      unusual historical incidents
+
+
+      abandoned buildings with strange histories
+
+
+      underground communities
+
+
+      bizarre local traditions
+
+
+      strange crimes that shocked cities
+
+
+      famous urban legends and whether they are true
+
+
+      hidden tunnels or forgotten infrastructure
+
+
+      unusual individuals who became local legends
+
+
+      unexpected discoveries in cities
+
+
+      forgotten places that were rediscovered
+
+
+      Dialogue style:
+
+
+      Hosts should tell stories and react emotionally to surprising details.
+
+
+      They may speculate about mysteries or debate whether certain stories are true.
+
+
+      Occasionally they may add humor or curiosity.
+
+
+      The conversation should feel like listening to fascinating urban storytelling.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '14:00'
+    title: Urban Stories
+    type: music
+  - days:
+    - everyday
+    description: A show exploring the strange and fascinating mechanics of the human
+      mind.  The hosts dive into psychology, cognitive science, human behavior and
+      the hidden patterns that influence how people think and make decisions.  Listeners
+      discover surprising facts about memory, emotions, perception, biases and the
+      weird tricks the brain plays on us every day.  The show is smart, curious and
+      sometimes a little mind-bending.  Music between segments features lo-fi, chill
+      electronic and experimental sounds.
+    djs:
+    - DJ_3
+    image_url: /static/images/shows/9936e290ac8f4a02a7db326a07f313fb_Human_Mind_Lab.png
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: 'Generate an engaging radio discussion about the human mind and psychology.
+
+
+      The show takes place in the late afternoon around 4PM when listeners are still
+      active but starting to feel mentally tired, so the discussion should be stimulating
+      and intriguing.
+
+
+      The hosts explore interesting aspects of human psychology and behavior.
+
+
+      Possible discussion topics include:
+
+
+      cognitive biases that influence decisions
+
+
+      strange tricks the brain plays on perception
+
+
+      memory illusions
+
+
+      why people believe conspiracy theories
+
+
+      the psychology of habits
+
+
+      how emotions affect decision making
+
+
+      social behavior and group psychology
+
+
+      how attention works
+
+
+      why people procrastinate
+
+
+      how the brain processes music and art
+
+
+      the science of motivation
+
+
+      strange psychological experiments
+
+
+      Dialogue style:
+
+
+      Hosts should analyze ideas, react to surprising facts and occasionally challenge
+      each other''s interpretations.
+
+
+      They may use small thought experiments to involve listeners.
+
+
+      The tone should be curious, intelligent and slightly playful.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '16:00'
+    title: Human Mind Lab
+    type: music
+  - days:
+    - everyday
+    description: "The high-energy evening show for people heading home after work.\
+      \  Fast conversations, surprising facts, music discoveries and entertaining\
+      \ debates keep the energy up during the busiest hours of the day.  The hosts\
+      \ react to trending topics, unusual stories and curious ideas while introducing\
+      \ energetic music perfect for the drive home.  The show is dynamic, fun and\
+      \ slightly chaotic \u2014 like city traffic itself."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/10059640e30b4f67b2abd72aeaa7a5fc_Drive_Time_Energy.png
+    prompt: 'Generate an energetic radio show conversation for evening drive time.
+
+
+      The show takes place around 6PM when listeners are commuting, driving home,
+      or finishing work.
+
+
+      The tone should be energetic, entertaining and fast-paced.
+
+
+      The hosts should sound lively and occasionally playful with each other.
+
+
+      Possible discussion topics include:
+
+
+      strange or funny news stories
+
+
+      surprising facts that most people don''t know
+
+
+      debates about modern lifestyle trends
+
+
+      unusual technology or gadgets
+
+
+      interesting social trends
+
+
+      bizarre records or achievements
+
+
+      funny everyday situations people experience
+
+
+      surprising statistics about modern life
+
+
+      weird products that exist
+
+
+      strange traditions around the world
+
+
+      pop culture moments
+
+
+      unexpected discoveries
+
+
+      Dialogue style:
+
+
+      Hosts should interrupt each other occasionally, react quickly and keep the momentum
+      of conversation high.
+
+
+      Humor and playful arguments are welcome.
+
+
+      The show should feel lively and entertaining for people stuck in traffic or
+      commuting.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '18:00'
+    title: Drive Time Energy
+    type: music
+  - days:
+    - everyday
+    description: discussing Harry Potter and the books, characters, themes, theories,
+      and behind-the-scenes details.
+    djs:
+    - DJ_3
+    - DJ_B
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: "This is a podcast-style radio show focused on discussing Harry Potter\
+      \ and the books, characters, themes, theories, and behind-the-scenes details.\
+      \ The hosts speak in long, natural, engaging dialogues. Conversations should\
+      \ feel real, dynamic, and sometimes intense. The hosts are allowed to disagree\
+      \ and argue respectfully, challenging each other\u2019s interpretations or opinions.\n\
+      \nThe tone should be intelligent, passionate, and immersive. Avoid generic summaries\
+      \ \u2014 focus on analysis, character psychology, symbolism, fan theories, controversial\
+      \ moments, and emotional impact.\n\nStructure:\n\nLong conversational exchanges\
+      \ between the hosts.\n\nNatural back-and-forth dialogue, including interruptions\
+      \ and reactions.\n\nDisagreements and debates are encouraged, but must feel\
+      \ organic.\n\nThe hosts may reference specific scenes or character arcs when\
+      \ relevant.\n\nBetween discussion blocks, music is played.\nBefore each song,\
+      \ one of the hosts must say something short \u2014 either:\n\na brief joke,\n\
+      \na quick personal remark,\n\nor a short story.\n\nKeep these pre-song segments\
+      \ concise (1\u20133 sentences max).\n\nIf the upcoming song has a relevant connection\
+      \ to the discussion (theme, mood, lyrics, cultural impact), briefly explain\
+      \ that connection before playing it.\n\nAvoid overly long monologues when introducing\
+      \ music. The focus remains on the discussion.\n\nMaintain strong pacing, emotional\
+      \ engagement, and personality contrast between the hosts.\n\nOutput Restriction\
+      \ Notice\n\nReturn only the final dialogue text intended for a teleprompter.\n\
+      Do not include any technical information, instructions, explanations, formatting\
+      \ notes, metadata, stage directions, or structural comments.\nDo not describe\
+      \ what you are doing.\nDo not add labels such as \u201CPrompt\u201D, \u201C\
+      Instruction\u201D, or similar.\nOutput only the spoken dialogue content."
+    start_time: '20:00'
+    title: Books Talks
+    type: music
+  - days:
+    - everyday
+    description: "A stylish night radio show exploring nightlife, music scenes, art\
+      \ and creative culture after dark.  The hosts dive into club culture, underground\
+      \ music, electronic scenes, digital art, street creativity and unusual subcultures\
+      \ from cities around the world.  The atmosphere is smooth, modern and slightly\
+      \ mysterious \u2014 like walking through a glowing city at night.  Between conversations\
+      \ the show plays electronic, synthwave, indie and alternative tracks."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/375932d796e24ab3be4a65eafc762787_Neon_Night_Show.png
+    prompt: 'Generate a stylish evening radio discussion about nightlife, art and
+      creative culture.
+
+
+      The show takes place around 8PM when listeners are relaxing after work, heading
+      out, or enjoying the evening.
+
+
+      The tone should feel smooth, cool and culturally aware.
+
+
+      The hosts explore modern nightlife and creative culture from around the world.
+
+
+      Possible discussion topics include:
+
+
+      underground music scenes
+
+
+      club culture in different cities
+
+
+      street art and digital art movements
+
+
+      interesting artists and musicians
+
+
+      nightlife traditions in different countries
+
+
+      unusual creative communities
+
+
+      experimental music and new sounds
+
+
+      fashion trends inspired by nightlife
+
+
+      creative technology used in music and art
+
+
+      immersive events and festivals
+
+
+      strange or unexpected art projects
+
+
+      how nightlife influences culture
+
+
+      Dialogue style:
+
+
+      Hosts should sound relaxed, confident and culturally curious.
+
+
+      They can share interesting discoveries, discuss artistic ideas and react to
+      surprising cultural trends.
+
+
+      Occasional humor and friendly disagreement are welcome.
+
+
+      The conversation should feel stylish and atmospheric.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '20:00'
+    title: Neon Night Show
+    type: music
+  - days:
+    - everyday
+    description: 'Our flagship night show: explores the vast mysteries of space and
+      the untapped potential of the human spirit.'
+    djs:
+    - DJ_A
+    - DJ_3
+    image_url: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80
+    music_folders:
+    - E:/My_Music/AI Music SUNO
+    prompt: "Topic:\nSpace and Human Potential\n\nFacts for AI prompt:\n\nSpace officially\
+      \ begins at the K\xE1rm\xE1n line, about 100 km (62 miles) above Earth.\n\n\
+      Commercial airplanes fly at around 10\u201312 km altitude, meaning space is\
+      \ only about 30\u201340 times higher than typical flight altitude.\n\nThe International\
+      \ Space Station (ISS) orbits Earth at about 400 km (250 miles) above the surface.\n\
+      \nThe ISS travels at approximately 28,000 km/h (17,500 mph) and completes one\
+      \ orbit around Earth every 90 minutes.\n\nAstronauts aboard the ISS experience\
+      \ 16 sunrises and sunsets every day.\n\nSince 1961, fewer than 700 humans have\
+      \ traveled to space.\n\nEarth's population exceeds 8 billion people, meaning\
+      \ spaceflight remains extremely rare.\n\nThe first human in space was Yuri Gagarin\
+      \ on April 12, 1961.\n\nThe first humans landed on the Moon during Apollo 11\
+      \ in 1969.\n\nNeil Armstrong became the first person to walk on the Moon.\n\n\
+      The Moon is about 384,400 km (238,855 miles) from Earth.\n\nLight from the Sun\
+      \ takes about 8 minutes and 20 seconds to reach Earth.\n\nThe nearest star system,\
+      \ Alpha Centauri, is about 4.24 light-years away.\n\nOne light-year equals about\
+      \ 9.46 trillion kilometers (5.88 trillion miles).\n\nThe Milky Way galaxy contains\
+      \ approximately 100\u2013400 billion stars.\n\nScientists estimate there may\
+      \ be hundreds of billions of galaxies in the observable universe.\n\nSpace has\
+      \ no atmosphere, meaning sound cannot travel.\n\nTemperatures in space can range\
+      \ from about +120\xB0C (248\xB0F) in sunlight to \u2013150\xB0C (\u2013238\xB0\
+      F) in shade.\n\nIn microgravity, astronauts can grow 3\u20135 cm taller due\
+      \ to spinal expansion.\n\nBone density can decrease by 1\u20132% per month during\
+      \ long missions in microgravity.\n\nAstronauts on the ISS receive significantly\
+      \ higher levels of cosmic radiation than people on Earth.\n\nThe longest single\
+      \ spaceflight by a human was 437 days, completed by cosmonaut Valeri Polyakov\
+      \ aboard the Mir space station.\n\nTwo spacecraft launched in 1977, Voyager\
+      \ 1 and Voyager 2, are now traveling in interstellar space.\n\nVoyager 1 is\
+      \ currently over 23 billion kilometers (14 billion miles) away from Earth.\n\
+      \nEach Voyager spacecraft carries a Golden Record containing sounds, music,\
+      \ greetings in 55 languages, and images of life on Earth.\n\nMars has a day\
+      \ length of 24 hours and 39 minutes, similar to Earth's day.\n\nGravity on Mars\
+      \ is about 38% of Earth's gravity.\n\nSurface temperatures on Mars can drop\
+      \ to about \u2013125\xB0C (\u2013195\xB0F).\n\nThe global space economy is estimated\
+      \ to be worth over $500 billion annually.\n\nReusable rocket technology has\
+      \ reduced launch costs from roughly $20,000 per kilogram in the 1960s to about\
+      \ $2,000 per kilogram today.\n\nHuman missions to the Moon are planned again\
+      \ through programs such as Artemis, aiming to establish long-term lunar presence.\n\
+      \nSome scientists believe humans may eventually become a multi-planetary species,\
+      \ living on both Earth and other worlds such as the Moon or Mars."
+    start_time: '22:00'
+    title: Space and Human Potential - Night Show
+    type: music
+  - days:
+    - everyday
+    description: "A late-night show dedicated to the world\u2019s greatest mysteries.\
+      \  The hosts explore strange historical events, unexplained phenomena, lost\
+      \ civilizations, mysterious artifacts and puzzling discoveries that scientists\
+      \ and historians still debate.  Some stories are well known, others are obscure\
+      \ and rarely discussed.  The show creates a feeling of curiosity and suspense,\
+      \ perfect for listeners late at night.  Atmospheric music and cinematic soundscapes\
+      \ play between conversations."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/b783073c32084d05bb47a47bfe966e08_Mysteries_of_the_World.png
+    prompt: 'Generate a mysterious late-night radio discussion about unsolved mysteries.
+
+
+      The show takes place around 10PM when listeners are relaxed and open to intriguing
+      stories.
+
+
+      The tone should feel suspenseful, intelligent and curious.
+
+
+      The hosts explore fascinating mysteries from history, science and archaeology.
+
+
+      Possible discussion topics include:
+
+
+      lost civilizations
+
+
+      mysterious ancient artifacts
+
+
+      unexplained archaeological discoveries
+
+
+      strange historical events
+
+
+      mysterious disappearances
+
+
+      unexplained scientific phenomena
+
+
+      famous unsolved cases
+
+
+      strange natural phenomena
+
+
+      lost cities and hidden structures
+
+
+      mysterious signals or discoveries
+
+
+      unexplained historical documents
+
+
+      legends that might have real origins
+
+
+      Dialogue style:
+
+
+      Hosts should build suspense while telling stories.
+
+
+      They may speculate about different theories and react to surprising facts.
+
+
+      Sometimes they may disagree about possible explanations.
+
+
+      The conversation should feel immersive and mysterious.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '22:00'
+    title: Mysteries of the World
+    type: music
+  - days:
+    - everyday
+    description: We in space
+    djs:
+    - DJ_A
+    - DJ_B
+    - DJ_3
+    image_url: ''
+    music_folders:
+    - E:/My_Music/EN/VA - NRJ Hit Music Only 2014 (2CD) (2014) [320 kbps]
+    prompt: "Generate a long-form, structured podcast dialogue about UFO and extraterrestrial\
+      \ theories and facts. The output must be a natural conversation between multiple\
+      \ speakers (do not specify or limit the number of participants \u2014 it may\
+      \ vary). The discussion should feel authentic, intelligent, and immersive.\n\
+      \nLength requirement: the full dialogue should be approximately 30 minutes of\
+      \ spoken content.\n\nStructure requirements:\n\nDivide the conversation clearly\
+      \ into 5 parts (Part 1\u2013Part 5).\n\nEach part should focus on a distinct\
+      \ theme, question, or angle.\n\nMaintain logical flow and progression between\
+      \ parts.\n\nConversations must be dynamic and organic, not scripted or robotic.\n\
+      \nDialogue style:\n\nLong, meaningful exchanges.\n\nParticipants may interrupt,\
+      \ challenge, and disagree respectfully.\n\nThey do not have to agree \u2014\
+      \ debate and differing interpretations are encouraged.\n\nThe tone should reflect\
+      \ intelligent, analytical speakers who know the material well.\n\nContent expectations:\n\
+      \nInclude specific references to events, character arcs, or key moments when\
+      \ relevant.\n\nIntegrate interesting facts, interpretations, or lesser-known\
+      \ details.\n\nAllow room for light humor and witty remarks where natural.\n\n\
+      Avoid shallow summaries \u2014 prioritize analysis and thoughtful discussion.\n\
+      \nBetween major discussion sections, allow space for short transitions that\
+      \ feel like a real podcast flow.\n\nThe final result should read like a professionally\
+      \ produced, structured yet natural podcast episode with strong personalities,\
+      \ depth, and engaging intellectual debate.\n\nOutput Restriction Notice\n\n\
+      Return only the final dialogue text intended for a teleprompter.\nDo not include\
+      \ any technical information, instructions, explanations, formatting notes, metadata,\
+      \ stage directions, or structural comments.\nDo not describe what you are doing.\n\
+      Do not add labels such as \u201CPrompt\u201D, \u201CInstruction\u201D, or similar.\n\
+      Output only the spoken dialogue content."
+    start_time: '23:00'
+    title: We and saince
+    type: music
+  - days:
+    - everyday
+    description: "The late-night heartbeat of the station.  Night Pulse is a slow,\
+      \ atmospheric show for listeners awake after midnight \u2014 night drivers,\
+      \ creatives, coders, dreamers and insomniacs.  The hosts explore unusual ideas,\
+      \ philosophical thoughts, strange facts, nighttime psychology and the quiet\
+      \ rhythm of the world when most people are asleep.  Music between segments features\
+      \ ambient electronic, downtempo, lo-fi and deep atmospheric tracks.  The mood\
+      \ is calm, thoughtful and hypnotic."
+    djs:
+    - DJ_A
+    image_url: /static/images/shows/8fa80008d2424901bb0a22d5132dba22_Night_Pulse2.png
+    prompt: 'Generate a calm late-night radio conversation.
+
+
+      The show takes place around midnight when the world is quiet and listeners are
+      often alone with their thoughts.
+
+
+      The tone should feel intimate, reflective and immersive.
+
+
+      Hosts explore unusual and thought-provoking topics suitable for the late night
+      hours.
+
+
+      Possible discussion topics include:
+
+
+      strange thoughts people have late at night
+
+
+      creativity that appears after midnight
+
+
+      unusual facts about sleep and dreams
+
+
+      philosophical questions about existence
+
+
+      strange coincidences in life
+
+
+      unusual night jobs and professions
+
+
+      the psychology of insomnia
+
+
+      mysterious events that happened at night
+
+
+      the atmosphere of cities after midnight
+
+
+      deep thoughts about time and memory
+
+
+      strange but true scientific facts
+
+
+      curious historical events that happened at night
+
+
+      Dialogue style:
+
+
+      Hosts speak calmly and naturally.
+
+
+      They react to each other''s ideas and allow pauses in conversation.
+
+
+      Occasionally they may share strange facts or ask philosophical questions.
+
+
+      The atmosphere should feel immersive and relaxing.
+
+
+      Avoid technical explanations about the radio system.
+
+
+      Speak only as radio hosts talking to listeners.'
+    start_time: '12:00'
+    title: Night Pulse
+    type: music
+server:
+  web_dashboard_port: 8001
+  web_front_port: 8000
+stream:
+  hls:
+    output_dir: ./output/hls
+    segment_duration_sec: 4
+  icecast:
+    host: localhost
+    mount: /radio.mp3
+    password: hackme
+    port: 8000
+  type: hls
+talk:
+  frequency_blocks: 3
+  max_duration_sec: 120
+  min_duration_sec: 45
+topics:
+  cooldown_hours: 2
+  rotation:
+  - tech
+  - music
+  - night_life
+  - culture
+  - weather
+tts:
+  cache_dir: ./cache/tts
+  cache_enabled: true
+  kokoro_url: http://localhost:8003
+  sample_rate: 24000
+  speed: 1.0
+  voices:
+    dj_3: af_jessica
+    dj_a: af_sarah
+    dj_b: af_bella

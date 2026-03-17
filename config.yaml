@@ -1,0 +1,442 @@
+audio:
+  crossfade_sec: 2
+  duck_db: 8
+  target_loudness_lufs: -14
+buffer:
+  critical_seconds: 60
+  min_minutes: 5
+  target_minutes: 15
+djs:
+  intro_before_end_sec: 10
+  list:
+  - id: DJ_A
+    name: Olga
+    personality: 'You are an upbeat, charismatic radio DJ who keeps the energy high
+      and the vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm
+      that matches the music. Before every song, say a short line: either a quick
+      joke, a light personal observation, or a very short story. Keep it natural and
+      conversational, never long. If there is a known story, background, or interesting
+      fact about the upcoming song or artist, briefly mention it in one or two sentences
+      before introducing the track. Always keep the pacing tight and engaging, like
+      a live radio host who knows the audience is here for the music.'
+    voice: af_sky
+    voice_ru: 6
+  - id: DJ_B
+    name: Antony
+    personality: 'You are a calm, confident radio host with a smooth voice and relaxed
+      delivery. Speak like someone who knows music deeply and enjoys sharing it with
+      listeners. Before each song, add a short moment of personality: either a clever
+      remark, a brief anecdote, or a subtle joke. Keep it concise and natural. If
+      the next track has an interesting story, inspiration, or cultural background,
+      mention it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+    voice: am_michael
+    voice_ru: 4
+  - id: DJ_3
+    name: Milka
+    personality: "You are a playful and witty DJ who brings humor and charm to the\
+      \ show. Speak casually and confidently, like a fun friend introducing great\
+      \ music. Before every track, deliver a short line \u2014 either a quick joke,\
+      \ a playful comment, or a tiny story. Keep it brief and entertaining. If there\u2019\
+      s an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    voice: af_jessica
+    voice_ru: 3
+  - id: DJ_4
+    name: Elvira
+    personality: "You are a playful and witty DJ who brings humor and charm to the\
+      \ show. Speak casually and confidently, like a fun friend introducing great\
+      \ music. Before every track, deliver a short line \u2014 either a quick joke,\
+      \ a playful comment, or a tiny story. Keep it brief and entertaining. If there\u2019\
+      s an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    voice: pf_dora
+    voice_ru: null
+  - id: DJ_5
+    name: Maximiliano
+    personality: 'You are a calm, confident radio host with a smooth voice and relaxed
+      delivery. Speak like someone who knows music deeply and enjoys sharing it with
+      listeners. Before each song, add a short moment of personality: either a clever
+      remark, a brief anecdote, or a subtle joke. Keep it concise and natural. If
+      the next track has an interesting story, inspiration, or cultural background,
+      mention it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+    voice: am_onyx
+    voice_ru: null
+  - id: DJ_6
+    name: Marianna
+    personality: 'You are an upbeat, charismatic radio DJ who keeps the energy high
+      and the vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm
+      that matches the music. Before every song, say a short line: either a quick
+      joke, a light personal observation, or a very short story. Keep it natural and
+      conversational, never long. If there is a known story, background, or interesting
+      fact about the upcoming song or artist, briefly mention it in one or two sentences
+      before introducing the track. Always keep the pacing tight and engaging, like
+      a live radio host who knows the audience is here for the music.'
+    voice: bf_isabella
+    voice_ru: null
+  long_monologue_threshold_sec: 20
+  outro_duration_sec: 7
+  personalities:
+    DJ_3: "You are a playful and witty DJ who brings humor and charm to the show.\
+      \ Speak casually and confidently, like a fun friend introducing great music.\
+      \ Before every track, deliver a short line \u2014 either a quick joke, a playful\
+      \ comment, or a tiny story. Keep it brief and entertaining. If there\u2019s\
+      \ an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    DJ_4: "You are a playful and witty DJ who brings humor and charm to the show.\
+      \ Speak casually and confidently, like a fun friend introducing great music.\
+      \ Before every track, deliver a short line \u2014 either a quick joke, a playful\
+      \ comment, or a tiny story. Keep it brief and entertaining. If there\u2019s\
+      \ an interesting story behind the song, the artist, or the moment it was created,\
+      \ mention it in a short, engaging way before playing the track. Your style should\
+      \ feel spontaneous, energetic, and slightly mischievous, while always keeping\
+      \ the focus on the music."
+    DJ_5: 'You are a calm, confident radio host with a smooth voice and relaxed delivery.
+      Speak like someone who knows music deeply and enjoys sharing it with listeners.
+      Before each song, add a short moment of personality: either a clever remark,
+      a brief anecdote, or a subtle joke. Keep it concise and natural. If the next
+      track has an interesting story, inspiration, or cultural background, mention
+      it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+    DJ_6: 'You are an upbeat, charismatic radio DJ who keeps the energy high and the
+      vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm that matches
+      the music. Before every song, say a short line: either a quick joke, a light
+      personal observation, or a very short story. Keep it natural and conversational,
+      never long. If there is a known story, background, or interesting fact about
+      the upcoming song or artist, briefly mention it in one or two sentences before
+      introducing the track. Always keep the pacing tight and engaging, like a live
+      radio host who knows the audience is here for the music.'
+    DJ_A: 'You are an upbeat, charismatic radio DJ who keeps the energy high and the
+      vibe positive. Speak with enthusiasm, warmth, and a sense of rhythm that matches
+      the music. Before every song, say a short line: either a quick joke, a light
+      personal observation, or a very short story. Keep it natural and conversational,
+      never long. If there is a known story, background, or interesting fact about
+      the upcoming song or artist, briefly mention it in one or two sentences before
+      introducing the track. Always keep the pacing tight and engaging, like a live
+      radio host who knows the audience is here for the music.'
+    DJ_B: 'You are a calm, confident radio host with a smooth voice and relaxed delivery.
+      Speak like someone who knows music deeply and enjoys sharing it with listeners.
+      Before each song, add a short moment of personality: either a clever remark,
+      a brief anecdote, or a subtle joke. Keep it concise and natural. If the next
+      track has an interesting story, inspiration, or cultural background, mention
+      it briefly before the song starts. Your tone should feel friendly, intelligent,
+      and slightly reflective, creating a comfortable late-night radio atmosphere.'
+hourly_news:
+  dj: DJ_5
+  enabled: true
+  newsdata:
+    api_key: 'YOUR_API_KEY_HERE'
+    country: us
+  openweathermap:
+    api_key: 'YOUR_API_KEY_HERE'
+    city: New York
+  thesportsdb:
+    api_key: '123'
+interactions:
+  listener:
+    enabled: true
+    filter_links: true
+    filter_profanity: true
+    promo_read_ratio: 70
+language: en
+llm:
+  api_key: 'YOUR_API_KEY_HERE'
+  api_type: openai
+  model_a:
+    api_key: 'YOUR_API_KEY_HERE'
+    api_type: openai
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 24096
+    model: arcee-ai/trinity-large-preview:free
+    temperature: 0.6
+    timeout_sec: 300
+  model_b:
+    api_key: 'YOUR_API_KEY_HERE'
+    api_type: openai
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 24096
+    model: arcee-ai/trinity-large-preview:free
+    temperature: 0.6
+    timeout_sec: 300
+  ollama_base_url: http://localhost:11434/v1
+  planner:
+    api_key: 'YOUR_API_KEY_HERE'
+    api_type: openai
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 24096
+    model: arcee-ai/trinity-large-preview:free
+    temperature: 0.6
+    timeout_sec: 300
+music:
+  folders:
+  - ./assets/music
+  genres:
+  - chill
+  - lofi
+  - ambient
+  - electronic
+  max_track_duration_sec: 360
+  min_track_duration_sec: 180
+safety:
+  blocked_topics: []
+  blocked_words: []
+schedule:
+  jingle_every_minutes: 15
+  news_every_minutes: 30
+  programs:
+  - days:
+    - everyday
+    description: ''
+    djs:
+    - DJ_3
+    prompt: "Description (Frontend)\n\nGenerate a long-form, structured podcast dialogue\
+      \ about Loving games in Italy. The output must be a natural conversation between\
+      \ multiple speakers (do not specify or limit the number of participants \u2014\
+      \ it may vary). The discussion should feel authentic, intelligent, and immersive.\n\
+      \nLength requirement: the full dialogue should be approximately 30 minutes of\
+      \ spoken content.\n\nStructure requirements:\n\nDivide the conversation clearly\
+      \ into 5 parts (Part 1\u2013Part 5).\n\nEach part should focus on a distinct\
+      \ theme, question, or angle.\n\nMaintain logical flow and progression between\
+      \ parts.\n\nConversations must be dynamic and organic, not scripted or robotic.\n\
+      \nDialogue style:\n\nLong, meaningful exchanges.\n\nParticipants may interrupt,\
+      \ challenge, and disagree respectfully.\n\nThey do not have to agree \u2014\
+      \ debate and differing interpretations are encouraged.\n\nThe tone should reflect\
+      \ intelligent, analytical speakers who know the material well.\n\nContent expectations:\n\
+      \nInclude specific references to events, character arcs, or key moments when\
+      \ relevant.\n\nIntegrate interesting facts, interpretations, or lesser-known\
+      \ details.\n\nAllow room for light humor and witty remarks where natural.\n\n\
+      Avoid shallow summaries \u2014 prioritize analysis and thoughtful discussion.\n\
+      \nBetween major discussion sections, allow space for short transitions that\
+      \ feel like a real podcast flow.\n\nThe final result should read like a professionally\
+      \ produced, structured yet natural podcast episode with strong personalities,\
+      \ depth, and engaging intellectual debate."
+    start_time: 00:00
+    title: Love Play in ...
+    type: music
+  - days:
+    - everyday
+    description: ''
+    djs:
+    - DJ_Milka
+    prompt: ''
+    start_time: 02:00
+    title: Night Delivey Juzz
+    type: music
+  - days:
+    - weekdays
+    description: Wake up with high energy and fresh tracks to start your day right.
+    djs:
+    - DJ_A
+    prompt: Keep it energetic and positive. Talk about morning routines and upcoming
+      events. Keep interactions light and fast.
+    start_time: 06:00
+    title: Morning Kickoff M-F
+    type: music
+  - days:
+    - weekends
+    description: High energy tracks to get your weekend going.
+    djs:
+    - DJ_3
+    - DJ_A
+    prompt: Super high energy. Talk about weekend plans, parties, and having fun.
+      Fast paced delivery.
+    start_time: '10:00'
+    title: Weekend Party Starter
+    type: music
+  - days:
+    - everyday
+    description: Morning News
+    djs:
+    - DJ_4
+    - DJ_5
+    image_url: ''
+    prompt: 'US Defense Secretary Pete Hegseth says a US submarine sank an Iranian
+      warship in the Indian Ocean with a torpedo
+
+
+      Hegseth did not name the ship - but earlier, the Sri Lankan navy said around
+      140 people were missing after an Iranian ship, the Iris Dena, went down off
+      the coast of Galle
+
+
+      At the same news conference, Chairman of the Joint Chiefs of Staff, Gen Dan
+      Caine, says the US will strike "progressively deeper into Iranian territory"
+
+
+      The UK is sending a warship to the eastern Mediterranean after attacks on a
+      British base in Cyprus - but it is not expected to set off this week
+
+
+      Meanwhile, Israel says it hit "security headquarters" across Tehran, as US-Israeli
+      airstrikes continue in Iran
+
+
+      "It''s getting worse and worse every day," one man in Tehran tells the BBC.
+      A three-day funeral ceremony for ex-Supreme Leader Ayatollah Ali Khamenei, due
+      to start this evening, has been postponed
+
+
+      Israel is also hitting Lebanon - we speak to the owner of a Lebanese hotel that
+      was hit
+
+
+      New attacks, apparently from Iran, have been reported in Saudi Arabia and Kuwait,
+      while Turkey says "Nato defences" shot down an Iranian missile
+
+
+      Make a news podcast script'
+    start_time: '11:15'
+    title: Morning Show
+    type: talk
+  - days:
+    - weekdays
+    description: Relaxing vibes for your working day. Time to focus and unwind.
+    djs:
+    - DJ_B
+    prompt: Keep it calm and focused. Talk about productivity and taking breaks. A
+      bit more relaxed.
+    start_time: '12:00'
+    title: Midday Chill
+    type: music
+  - days:
+    - weekends
+    description: Smooth tracks for driving or just chilling on your day off.
+    djs:
+    - DJ_B
+    prompt: Relaxed but upbeat. Talk about road trips, Sunday roast, or kicking back
+      and doing nothing.
+    start_time: '14:00'
+    title: Weekend Afternoon Drive
+    type: music
+  - days:
+    - everyday
+    description: Deep chats, chill music, and late-night thoughts.
+    djs:
+    - DJ_A
+    - DJ_3
+    prompt: "Keep the tone calm, insightful, and slightly philosophical. Talk about\
+      \ the night sky, memories, and reflection. Long monologues are allowed. \nTodays\
+      \ Topic: Grocery stores' problems"
+    start_time: '20:00'
+    title: Night Radio Vibes
+    type: music
+  - days:
+    - everyday
+    description: discussing Harry Potter and the books, characters, themes, theories,
+      and behind-the-scenes details.
+    djs:
+    - DJ_A
+    - DJ_3
+    - DJ_B
+    prompt: "This is a podcast-style radio show focused on discussing Harry Potter\
+      \ and the books, characters, themes, theories, and behind-the-scenes details.\
+      \ The hosts speak in long, natural, engaging dialogues. Conversations should\
+      \ feel real, dynamic, and sometimes intense. The hosts are allowed to disagree\
+      \ and argue respectfully, challenging each other\u2019s interpretations or opinions.\n\
+      \nThe tone should be intelligent, passionate, and immersive. Avoid generic summaries\
+      \ \u2014 focus on analysis, character psychology, symbolism, fan theories, controversial\
+      \ moments, and emotional impact.\n\nStructure:\n\nLong conversational exchanges\
+      \ between the hosts.\n\nNatural back-and-forth dialogue, including interruptions\
+      \ and reactions.\n\nDisagreements and debates are encouraged, but must feel\
+      \ organic.\n\nThe hosts may reference specific scenes or character arcs when\
+      \ relevant.\n\nBetween discussion blocks, music is played.\nBefore each song,\
+      \ one of the hosts must say something short \u2014 either:\n\na brief joke,\n\
+      \na quick personal remark,\n\nor a short story.\n\nKeep these pre-song segments\
+      \ concise (1\u20133 sentences max).\n\nIf the upcoming song has a relevant connection\
+      \ to the discussion (theme, mood, lyrics, cultural impact), briefly explain\
+      \ that connection before playing it.\n\nAvoid overly long monologues when introducing\
+      \ music. The focus remains on the discussion.\n\nMaintain strong pacing, emotional\
+      \ engagement, and personality contrast between the hosts.\n\nOutput Restriction\
+      \ Notice\n\nReturn only the final dialogue text intended for a teleprompter.\n\
+      Do not include any technical information, instructions, explanations, formatting\
+      \ notes, metadata, stage directions, or structural comments.\nDo not describe\
+      \ what you are doing.\nDo not add labels such as \u201CPrompt\u201D, \u201C\
+      Instruction\u201D, or similar.\nOutput only the spoken dialogue content."
+    start_time: '22:00'
+    title: Books Talks
+    type: talk
+  - days:
+    - everyday
+    description: We in space
+    djs:
+    - DJ_A
+    - DJ_B
+    - DJ_3
+    image_url: ''
+    prompt: "Generate a long-form, structured podcast dialogue about UFO and extraterrestrial\
+      \ theories and facts. The output must be a natural conversation between multiple\
+      \ speakers (do not specify or limit the number of participants \u2014 it may\
+      \ vary). The discussion should feel authentic, intelligent, and immersive.\n\
+      \nLength requirement: the full dialogue should be approximately 30 minutes of\
+      \ spoken content.\n\nStructure requirements:\n\nDivide the conversation clearly\
+      \ into 5 parts (Part 1\u2013Part 5).\n\nEach part should focus on a distinct\
+      \ theme, question, or angle.\n\nMaintain logical flow and progression between\
+      \ parts.\n\nConversations must be dynamic and organic, not scripted or robotic.\n\
+      \nDialogue style:\n\nLong, meaningful exchanges.\n\nParticipants may interrupt,\
+      \ challenge, and disagree respectfully.\n\nThey do not have to agree \u2014\
+      \ debate and differing interpretations are encouraged.\n\nThe tone should reflect\
+      \ intelligent, analytical speakers who know the material well.\n\nContent expectations:\n\
+      \nInclude specific references to events, character arcs, or key moments when\
+      \ relevant.\n\nIntegrate interesting facts, interpretations, or lesser-known\
+      \ details.\n\nAllow room for light humor and witty remarks where natural.\n\n\
+      Avoid shallow summaries \u2014 prioritize analysis and thoughtful discussion.\n\
+      \nBetween major discussion sections, allow space for short transitions that\
+      \ feel like a real podcast flow.\n\nThe final result should read like a professionally\
+      \ produced, structured yet natural podcast episode with strong personalities,\
+      \ depth, and engaging intellectual debate.\n\nOutput Restriction Notice\n\n\
+      Return only the final dialogue text intended for a teleprompter.\nDo not include\
+      \ any technical information, instructions, explanations, formatting notes, metadata,\
+      \ stage directions, or structural comments.\nDo not describe what you are doing.\n\
+      Do not add labels such as \u201CPrompt\u201D, \u201CInstruction\u201D, or similar.\n\
+      Output only the spoken dialogue content."
+    start_time: '23:00'
+    title: We and saince
+    type: talk
+server:
+  web_dashboard_port: 8001
+  web_front_port: 8000
+social:
+  spotify_url: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM3M
+stream:
+  hls:
+    output_dir: ./output/hls
+    segment_duration_sec: 4
+  icecast:
+    host: localhost
+    mount: /radio.mp3
+    password: hackme
+    port: 8010
+  type: hls
+talk:
+  frequency_blocks: 3
+  max_duration_sec: 120
+  min_duration_sec: 45
+  sparse_mode: true
+topics:
+  cooldown_hours: 2
+  rotation:
+  - tech
+  - music
+  - night_life
+  - culture
+  - weather
+tts:
+  cache_dir: ./cache/tts
+  cache_enabled: true
+  kokoro_url: http://localhost:8003
+  sample_rate: 24000
+  speed: 1.0
+  voices:
+    dj_3: af_jessica
+    dj_4: pf_dora
+    dj_5: am_onyx
+    dj_6: bf_isabella
+    dj_a: af_sky
+    dj_b: am_michael

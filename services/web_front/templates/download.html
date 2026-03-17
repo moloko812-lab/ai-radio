@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download AI Radio • Business & Personal Use</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --accent-cyan: #00f5ff;
+            --accent-purple: #bf00ff;
+            --accent-pink: #ff0080;
+            --text-primary: #ffffff;
+            --text-secondary: #8888aa;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: var(--bg-card);
+            padding: 60px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            backdrop-filter: blur(20px);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .intro {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-cyan);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .card .price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .free .price { color: var(--accent-cyan); }
+        .business .price { color: var(--accent-pink); }
+        
+        .card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+        .card li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card li::before {
+            content: '✓';
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 34px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+        .free-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .free-btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        .business-btn {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 245, 255, 0.3);
+        }
+        .business-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 245, 255, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .container { padding: 30px; }
+            h1 { font-size: 2.2rem; }
+        }
+        
+        .back-link {
+            margin-top: 40px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--accent-cyan);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Radio License & Usage</h1>
+        <p class="intro">Broadcast the future of sound in your space. We provide high-quality AI-generated audio for every atmosphere.</p>
+        
+        <div class="grid">
+            <div class="card free">
+                <h2>Personal Use</h2>
+                <span class="price">Free Forever</span>
+                <ul>
+                    <li>Listen anywhere, anytime</li>
+                    <li>Non-commercial usage</li>
+                    <li>Perfect for home & relaxation</li>
+                    <li>Open-source core</li>
+                </ul>
+                <a href="https://github.com/ai-radio/app" class="cta-btn free-btn">Download 📥</a>
+            </div>
+            
+            <div class="card business">
+                <h2>For Businesses</h2>
+                <span class="price">$10 / month</span>
+                <ul>
+                    <li>Commercial license included</li>
+                    <li>Restaurants, Cafes, Shops</li>
+                    <li>High-fidelity audio stream</li>
+                    <li>No copyright worries</li>
+                </ul>
+                <a href="https://buy.stripe.com/abc123placeholder" class="cta-btn business-btn">Subscribe Now</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                Looking for a custom AI DJ for your brand? We offer tailored radio solutions for corporate environments.
+            </p>
+            <a href="mailto:contact@airadioapp.com" style="color: var(--accent-cyan); font-weight: bold; text-decoration: none;">Contact our team →</a>
+        </div>
+    </div>
+    
+    <a href="/" class="back-link">← Back to Radio</a>
+</body>
+</html>

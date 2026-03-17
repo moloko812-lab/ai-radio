@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env/
+node_modules/
+
+# Radio-specific
+data/
+logs/
+output/
+cache/
+*.db
+*.wav
+*.mp3
+!assets/music/README.md
+!assets/music/.gitkeep
+!assets/fallback/.gitkeep
+
+# Project caches
+.gemini/
+.idea/
+.vscode/
+*.log
+docs/
+tmp/
+tmp_v1/
+
+# Large binaries (Optional, depending if we want users to download manually)
+vosk-model-*/
+# Kokoro models are downloaded via library or placed in voices/ folders.
+# If they are large, exclude them:
+# voices/*.pt
+# kokoro/

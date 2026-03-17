@@ -1,0 +1,100 @@
+Radio AI System - COMPLETE ROADMAP & OVERVIEW
+
+1. SYSTEM ARCHITECTURE
+======================
+The AI Radio is a modular, multi-service system designed to maintain a 24/7 continuous audio stream with AI-generated dialogue, music, and news.
+
+Core Components:
+----------------
+* ORCHESTRATOR (The Brain): A state machine that manages the lifecycle of the broadcast.
+  - File: services/orchestrator/app.py
+  - States: WARMUP, TALK_GEN, TTS_GEN, RENDER, MUSIC_FILL, PUBLISH, DEGRADED.
+  - Buffer Management: Maintains a rolling buffer (default 15 min) to ensure zero silence.
+
+* DIALOGUE ENGINE (The Voice): Generates scripts for DJs using Large Language Models.
+  - File: services/dialogue/planner.py
+  - Logic: Uses prompts tailored to specific show types. Integrates music metadata, news, and listener chat messages.
+  - Multi-DJ: Supports dialogue between multiple DJs with distinct personalities.
+
+* TTS WORKER (The Speech): Converts text to audio.
+  - File: services/tts_kokoro/worker.py
+  - Primary (EN): Kokoro TTS service (Port 8003).
+  - Secondary (RU): Vosk TTS service (Port 8002).
+  - Fallbacks: System SAPI (pyttsx3) or sine tone generation if all else fails.
+
+* AUDIO RENDERER (The Mixer): Processes and mixes audio clips.
+  - File: services/render/renderer.py
+  - Actions: Concatenates voice lines, adds background music beds with auto-ducking, applies EQ presets, and EBU R128-style normalization.
+
+* MUSIC SCHEDULER (The DJ): Selects and manages tracks.
+  - Files: services/music/planner.py, services/music/library.py
+  - Library: SQLite-based database (data/library.db) storing track info, lyrics, and play stats.
+
+* STREAMER (The Transmitter): Puts the audio on the web.
+  - File: services/streamer/streamer.py
+  - Protocol: HLS (HTTP Live Streaming).
+  - Logic: Paces audio delivery to real-time, outputs .m3u8 and .ts segments to output/hls/.
+
+2. KEY FUNCTIONALITY & LOGIC
+============================
+
+2.1. Program Scheduling
+-----------------------
+The system follows a schedule defined in config.yaml. Each program includes:
+* Title & Description: Shown on the front-end.
+* DJ Selection: Which DJs host the show.
+* Custom Prompts: Instructions for the LLM to set the show's mood (e.g., Night Pulse vs. Deep Space Signals).
+* Timing: Start times and day filters (everyday, weekdays, weekends).
+
+2.2. Hourly News, Weather & Sports
+---------------------------------
+Automatic bulletins generated at the top of every hour.
+* Data Sources: OpenWeatherMap (Weather), NewsData.io (News), TheSportsDB (Sports).
+* Integration: Data is fetched, passed to the LLM to write a 1-minute bulletin, and read by a specific DJ (usually DJ_5).
+
+2.3. Listener Interaction (Chat)
+--------------------------------
+* Real-time Chat: Listeners can send messages via the web front-end.
+* AI Moderation: Messages pass through a two-step check:
+  1. Regex-based profanity/spam filter.
+  2. LLM-based "security prompt" to ensure suitability for air.
+* On-Air Reaction: Approved messages are queued for the DJs. In the next "Talk" block, the planner includes these messages in the prompt, telling DJs to react/answer the listeners.
+
+2.4. Music Intelligence
+-----------------------
+* Metadata Extraction: Scans music folders. If a .txt file exists for a track (e.g., from Suno/Udio), it parses lyrics, genre, and mood.
+* Cognitive Discussion: The LLM receives the upcoming track's lyrics and is assigned a "discussion tactic" (e.g., relate to philosophy, describe a cinematic scene) to avoid generic intros.
+
+2.5. Audio Quality Control
+--------------------------
+* Ducking: Music volume drops automatically by a configurable dB when a DJ speaks.
+* EQ Presets: Genre-aware equalization (Lofi, Electronic, Rock, Vocal, etc.).
+* Normalization: Ensures a consistent loudness level across all segments.
+
+3. DIRECTORY STRUCTURE
+======================
+assets/         - Music, Jingles, Fallback clips, Background beds.
+cache/          - Temporary storage for TTS audio (MD5 hashed files).
+data/           - Persistent SQLite databases (library.db, listeners.db).
+logs/           - Detailed service logs (orchestrator.log, news_api.log, etc.).
+output/         - Rendered segments and final HLS stream files.
+services/       - The core logic modules (Orchestrator, Dialogue, Render, Streamer, TTS, Web).
+shared/         - Common models (Pydantic/Dataclasses) and runtime state trackers.
+infra/          - Potential deployment configurations (Nginx, Docker).
+
+4. CURRENT STATUS & TECH STACK
+==============================
+* Language: Python 3.x
+* Web Framework: Flask (Front-end and Dashboard)
+* Audio Engine: FFmpeg (via subprocess)
+* Databases: SQLite (Fast, local storage)
+* LLM: Interfaced via HTTP (OpenRouter, Ollama)
+* TTS: Multi-service (Kokoro, Vosk, pyttsx3)
+
+5. FUTURE IMPROVEMENTS (ROADMAP TARGETS)
+========================================
+* Multi-language support (RU/EN switching).
+* Advanced beat-matching and transitions.
+* S3-compatible remote storage for segments and audio.
+* Enhanced analytics for listener engagement and tracks popularity.
+* Mobile app or improved PWA (Progressive Web App).

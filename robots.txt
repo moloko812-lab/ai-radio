@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /library
+Allow: /download
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://airadioapp.com/sitemap.xml
