@@ -1,3 +1,3 @@
-user@user5500:~/ai-radio$ source Kokoro-TTS-Local-master/venv/bin/activate
-(venv) user@user5500:~/ai-radio$ python start_radio.py
+~/ai-radio$ source Kokoro-TTS-Local-master/venv/bin/activate
+~/ai-radio$ python start_radio.py
 
