@@ -58,7 +58,50 @@ The system includes a powerful monitoring dashboard for real-time orchestration 
 
 ---
 
-## 4. Technical Architecture (The Engine Room)
+## 4. Quick Start Guide
+
+### 📂 Prerequisites
+- **Python 3.10+** (Recommended)
+- **FFmpeg** (Essential for audio processing)
+- **Redis Server** (Required for state management)
+- **Nginx** (Optional but recommended for high load delivery)
+
+### ⚙️ Installation (Ubuntu 22.04+)
+The fastest way to install the entire system is by using the provided installation script:
+```bash
+git clone https://github.com/moloko812-lab/ai-radio.git
+cd ai-radio
+chmod +x install.sh
+./install.sh
+```
+
+### 🛠️ Manual Configuration
+1. **Initialize Virtual Environment:**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+2. **Setup API Keys:**
+   Open `config.yaml` and replace placeholders with your actual keys:
+   - `llm -> api_key`: Your **OpenRouter** API key (for DJ scripts).
+   - `hourly_news -> openweathermap -> api_key`: For weather updates.
+   - `hourly_news -> newsdata -> api_key`: For live news fetching.
+
+3. **Media Setup:**
+   - Place your music files in the folders specified in `config.yaml` (default: `assets/music`).
+   - Ensure the **Kokoro TTS** and **Vosk** models are correctly placed in the root directory.
+
+### 🚀 Starting the Platform
+To launch all services (Orchestrator, Streamer, and Web Front), run the main entry point:
+```bash
+python3 start_radio.py
+```
+Access the **Web Front** at `http://localhost:8000` and the **Admin Dashboard** at `http://localhost:8001`.
+
+---
+
+## 5. Technical Architecture (The Engine Room)
 
 ### ⚙️ Backend (Python/Flask)
 - **Orchestrator:** The brain of the system. It coordinates the LLM (Large Language Model) for scriptwriting and the TTS (Text-to-Speech) for voice generation.
@@ -76,7 +119,7 @@ The system includes a powerful monitoring dashboard for real-time orchestration 
 
 ---
 
-## 5. Hardware Requirements (Current Setup)
+## 6. Hardware Requirements (Current Setup)
 Designed to run on robust "Workstation" grade hardware:
 - **CPU:** Multi-core Xeon/Core i7 (High thread count for parallel audio rendering).
 - **RAM:** 96GB+ (Enables massive RAM-disk caching).
@@ -85,13 +128,13 @@ Designed to run on robust "Workstation" grade hardware:
 
 ---
 
-## 6. Monetization & Business
+## 7. Monetization & Business
 - **Personal Use:** Free download for home listening (Open-source core).
 - **B2B Licensing ($10/mo):** Specialized commercial license for restaurants, cafes, and hotels, providing legal, copyright-safe, AI-generated background audio.
 
 ---
 
-## 7. Future Roadmap
+## 8. Future Roadmap
 - **Real-time Voice Synthesis:** Moving from pre-rendered segments to "on-the-fly" live DJ responses.
 - **Personality Expansion:** Allowing users to create their own custom AI DJs via the dashboard.
 - **Mobile Apps:** Native iOS and Android players with car-play support.
