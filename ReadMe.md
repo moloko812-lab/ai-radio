@@ -10,6 +10,8 @@ Contact: airadioapp@gmail.com
 
 # 🎙️ AI Radio: The Generative Broadcasting Platform
 
+![Front Page](screenshots/FP_1.jpg)
+
 ## 1. Project Vision
 **AI Radio** is a next-generation, fully autonomous broadcasting system where every element—from the music and jingles to the DJ host segments and talk shows—is generated or managed by Artificial Intelligence. It transforms a static playlist into a living, breathing media experience that responds to culture, time of day, and listener interaction.
 
@@ -38,7 +40,25 @@ Contact: airadioapp@gmail.com
 
 ---
 
-## 3. Technical Architecture (The Engine Room)
+## 3. Project Showcase
+
+### 🎨 Modern Web Frontend
+The web interface features a stunning glassmorphism design, real-time audio visualizers, and interactive DJ speech bubbles.
+
+| Player & Visualizer | Music Library | Track Preview |
+| :---: | :---: | :---: |
+| ![Player](screenshots/FP_1.jpg) | ![Library](screenshots/FP_Library1.jpg) | ![Preview](screenshots/FP_SongPrevew1.jpg) |
+
+### 🛠️ Admin Dashboard
+The system includes a powerful monitoring dashboard for real-time orchestration control.
+
+| System Status | Performance Logs |
+| :---: | :---: |
+| ![Status](screenshots/DB_Scr2.jpg) | ![Logs](screenshots/DB_Scr3.jpg) |
+
+---
+
+## 4. Technical Architecture (The Engine Room)
 
 ### ⚙️ Backend (Python/Flask)
 - **Orchestrator:** The brain of the system. It coordinates the LLM (Large Language Model) for scriptwriting and the TTS (Text-to-Speech) for voice generation.
@@ -56,7 +76,7 @@ Contact: airadioapp@gmail.com
 
 ---
 
-## 4. Hardware Requirements (Current Setup)
+## 5. Hardware Requirements (Current Setup)
 Designed to run on robust "Workstation" grade hardware:
 - **CPU:** Multi-core Xeon/Core i7 (High thread count for parallel audio rendering).
 - **RAM:** 96GB+ (Enables massive RAM-disk caching).
@@ -65,13 +85,13 @@ Designed to run on robust "Workstation" grade hardware:
 
 ---
 
-## 5. Monetization & Business
+## 6. Monetization & Business
 - **Personal Use:** Free download for home listening (Open-source core).
 - **B2B Licensing ($10/mo):** Specialized commercial license for restaurants, cafes, and hotels, providing legal, copyright-safe, AI-generated background audio.
 
 ---
 
-## 6. Future Roadmap
+## 7. Future Roadmap
 - **Real-time Voice Synthesis:** Moving from pre-rendered segments to "on-the-fly" live DJ responses.
 - **Personality Expansion:** Allowing users to create their own custom AI DJs via the dashboard.
 - **Mobile Apps:** Native iOS and Android players with car-play support.
