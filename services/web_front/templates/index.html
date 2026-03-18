@@ -2790,6 +2790,10 @@
             if (isPlaying) {
                 audioPlayer.play().then(() => {
                     updateStatus(true);
+                    // Initialize the visualizer on first start
+                    if (window.initVisualizer) {
+                        window.initVisualizer(audioPlayer);
+                    }
                 }).catch(e => {
                     console.error('Playback failed:', e);
                     // Usually this means autoplay blocked or 404
@@ -2862,7 +2866,31 @@
                 playBtn.textContent = '⏸ PAUSE';
                 playBtn.classList.add('playing');
                 updateStatus(false); // will turn true when ready
+                if (window.initVisualizer) {
+                    window.initVisualizer(audioPlayer);
+                }
                 startRadio();
+            }
+        }
+
+        /**
+         * Dynamic theme update based on music energy level
+         * Energy ranges 0.0 - 1.0
+         */
+        function updateVisualizerTheme(energy) {
+            const root = document.documentElement;
+            // Adjust glowing intensity
+            const intensity = 0.1 + (energy * 0.4);
+            const spread = 20 + (energy * 40);
+            
+            root.style.setProperty('--ambilight-color', `rgba(0, 245, 255, ${intensity})`);
+            root.style.setProperty('--ambilight-spread', `${spread}px`);
+            
+            // Adjust card scale slightly for heavy beats
+            if (energy > 0.85) {
+                const card = document.querySelector('.player-card');
+                card.style.transform = 'scale(1.01)';
+                setTimeout(() => card.style.transform = 'scale(1)', 100);
             }
         }
 
