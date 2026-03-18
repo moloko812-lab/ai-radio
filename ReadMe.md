@@ -4,7 +4,7 @@ AI Radio is free for personal and non-commercial use.
 
 Commercial use requires a separate license.
 
-Contact: licensing@airadioapp.com
+Contact: airadioapp@gmail.com
 
 
 

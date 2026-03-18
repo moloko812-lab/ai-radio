@@ -19266,3 +19266,21 @@ Olga: A I Radio is live! All systems are operational and we are starting the bro
 ----------------------------------------
 [2026-03-17 19:41:11] ⚙️ TTS: ✅ Kokoro OK [am_michael] (Duration: 3.4s)
 [2026-03-17 19:41:12] ⚙️ TTS: ✅ Kokoro OK [am_michael] (Duration: 4.5s)
+[2026-03-17 20:10:04] [Night Radio Vibes | MUSIC] 🎤 DIALOGUE (SegmentType.TALK):
+Olga: A I Radio is live! All systems are operational and we are starting the broadcast.
+----------------------------------------
+[2026-03-17 20:10:08] [Night Radio Vibes | MUSIC] 🎵 MUSIC:  - Caleb Rivers — Still Breathing Tonight (1) (236s)
+[2026-03-17 20:10:08] [Night Radio Vibes | MUSIC] 🎤 DIALOGUE (SegmentType.MUSIC):
+[Music: Caleb Rivers — Still Breathing Tonight (1).mp3]
+----------------------------------------
+[2026-03-17 20:10:25] ⚙️ TTS: ✅ Kokoro OK [af_jessica] (Duration: 3.5s)
+[2026-03-17 20:10:25] ⚙️ TTS: ✅ Kokoro OK [af_jessica] (Duration: 3.0s)
+[2026-03-17 20:10:26] ⚙️ TTS: ✅ Kokoro OK [af_jessica] (Duration: 3.9s)
+[2026-03-17 20:14:05] [Night Radio Vibes | MUSIC] 🎵 MUSIC:  - Caleb Rivers — Still Breathing Tonight (1) (236s)
+[2026-03-17 20:14:05] [Night Radio Vibes | MUSIC] 🎤 DIALOGUE (SegmentType.MUSIC):
+[Music: Caleb Rivers — Still Breathing Tonight (1).mp3]
+----------------------------------------
+[2026-03-17 20:18:00] [Night Radio Vibes | MUSIC] 🎵 MUSIC:  - Caleb Rivers — Still Breathing Tonight (1) (236s)
+[2026-03-17 20:18:00] [Night Radio Vibes | MUSIC] 🎤 DIALOGUE (SegmentType.MUSIC):
+[Music: Caleb Rivers — Still Breathing Tonight (1).mp3]
+----------------------------------------
